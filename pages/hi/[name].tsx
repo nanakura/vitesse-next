@@ -1,10 +1,10 @@
-import { useRouter } from "next/router"
+import { useRouter } from 'next/router'
 
 export default function Hi() {
-const router = useRouter()
-	const { name } = router.query
+  const router = useRouter()
+  const { name } = router.query
 
-	return (
+  return (
 		<div>
       <div className="i-carbon-pedestrian text-4xl inline-block" />
       <p>
@@ -23,5 +23,5 @@ const router = useRouter()
         </button>
       </div>
 		</div>
-	)
+  )
 }

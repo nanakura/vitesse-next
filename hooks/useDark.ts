@@ -1,5 +1,5 @@
-import { useEffect } from "react"
-import { useDarkMode } from "usehooks-ts"
+import { useEffect } from 'react'
+import { useDarkMode } from 'usehooks-ts'
 
 export default function useDark() {
   const { isDarkMode: isDark, toggle: toggleDark } = useDarkMode()
