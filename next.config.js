@@ -7,16 +7,15 @@ const nextConfig = {
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
     config.plugins = [
       ...config.plugins,
-      // require('unplugin-auto-import/webpack')({
-      //   imports: [
-      //     'react',
-      //     'react-router-dom',
-      //     {
-      //       'usehooks-ts': ['useCounter', 'useDarkMode']
-      //     },
-      //   ],
-      //   dts: true,
-      // }),
+      require('unplugin-auto-import/webpack')({
+        imports: [
+          'react',
+          {
+            'usehooks-ts': ['useCounter', 'useDarkMode']
+          },
+        ],
+        dts: true,
+      }),
       UnoCSS()
     ]
     return config
