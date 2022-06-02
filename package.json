@@ -3,8 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "run-p dev:*",
+    "build": "run-s build:*",
+    "dev:css": "npm run generate:css -- --watch",
+    "build:css": "npm run generate:css",
+    "dev:next": "next dev",
+    "build:next": "next build",
+    "generate:css": "unocss \"./**/*.tsx\" -c unocss.config.ts -o ./styles/uno.css",
     "start": "next start",
     "lint": "next lint",
     "test": "vitest"
@@ -30,6 +35,7 @@
     "@vitejs/plugin-react": "^1.3.2",
     "eslint": "8.16.0",
     "jsdom": "^19.0.0",
+    "npm-run-all": "^4.1.5",
     "tsconfig-paths": "^4.0.0",
     "typescript": "4.7.2",
     "unocss": "^0.37.1",

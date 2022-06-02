@@ -6,9 +6,6 @@
 <a href="https://github.com/antfu/vitesse">Vitesse</a> for Next.js
 </h2><br>
 
-<pre align="center">
-🧪 Working in Progress
-</pre>
 
 <p align="center">
 <br>
@@ -16,17 +13,32 @@
 
 ## Features
 
-- [Next](https://nextjs.org/) - A full stack web framework that lets you focus on the user interface and work back through web fundamentals to deliver a fast, slick, and resilient user experience that deploys to any Node.js server and even non-Node.js environments at the edge like Cloudflare Workers.
+- [Next](https://nextjs.org/) - A full stack web framework.
 
 - 🎨 [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
 
 - 😃 Use icons from any icon sets in Pure CSS, powered by [UnoCSS](https://github.com/antfu/unocss)
 
-- ~~📥 APIs auto importing - for Composition API, VueUse and custom composables.~~
+- ✅ Use [Vitest](http://vitest.dev/) for unit and components testing
 
 - 🏎 Zero-config cloud functions and deploy
 
 - 🦾 TypeScript, of course
+
+- ☁️ Deploy on Netlify, zero-config
+
+<br>
+
+See [Vitesse](https://github.com/antfu/vitesse) for full featureset.
+
+## Dropped Features from [Vitesse](https://github.com/antfu/vitesse)
+
+- ~~📥 APIs auto importing - for Composition API, VueUse and custom composables. (bugs i can't fix)~~
+- ~~i18n~~
+- ~~Layouts~~
+- ~~SSG~~
+- ~~PWA~~
+- ~~Markdown~~
 
 ## IDE
 
@@ -36,6 +48,7 @@ We recommend using [VS Code](https://code.visualstudio.com/) with [Volar](https:
 
 - [vitesse](https://github.com/antfu/vitesse) - Opinionated Vite Starter Template
 - [vitesse-lite](https://github.com/antfu/vitesse-lite) - Lightweight version of Vitesse
+- [vitesse-lite-react](https://github.com/lxy-yz/vitesse-lite-react) - React version of Vitesse-Lite
 - [vitesse-nuxt-bridge](https://github.com/antfu/vitesse-nuxt-bridge) - Vitesse for Nuxt 2 with Bridge
 - [vitesse-webext](https://github.com/antfu/vitesse-webext) - WebExtension Vite starter template
 

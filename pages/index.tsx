@@ -19,11 +19,11 @@ const Home: NextPage = () => {
       <div className="i-carbon-campsite text-4xl inline-block" />
       <p>
         <a rel="noreferrer" href="https://github.com/antfu/vitesse-lite" target="_blank">
-        Vitesse Remix
+        Vitesse Next
         </a>
       </p>
       <p>
-        <em className="text-sm op75">Opinionated Remix.Run Starter Template</em>
+        <em className="text-sm op75">Opinionated Next.js Starter Template</em>
       </p>
       <div className="py-4" />
       <input
