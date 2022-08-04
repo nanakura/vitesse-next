@@ -27,13 +27,14 @@
 
 - ☁️ Deploy on Netlify, zero-config
 
+- 📥 APIs auto importing - for Composition API, VueUse and custom composables.
+
 <br>
 
 See [Vitesse](https://github.com/antfu/vitesse) for full featureset.
 
 ## Dropped Features from [Vitesse](https://github.com/antfu/vitesse)
 
-- ~~📥 APIs auto importing - for Composition API, VueUse and custom composables. (bugs i can't fix)~~
 - ~~i18n~~
 - ~~Layouts~~
 - ~~SSG~~

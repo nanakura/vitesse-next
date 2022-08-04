@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import { useDarkMode } from 'usehooks-ts'
 
 export default function useDark() {

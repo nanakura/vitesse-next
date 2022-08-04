@@ -1,23 +1,15 @@
 /** @type {import('next').NextConfig} */
 
 const UnoCSS = require('@unocss/webpack').default
+const AutoImport = require('unplugin-auto-import/webpack')
 
 const nextConfig = {
   reactStrictMode: true,
-  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
-    config.plugins = [
-      ...config.plugins,
-      require('unplugin-auto-import/webpack')({
-        imports: [
-          'react',
-          {
-            'usehooks-ts': ['useCounter', 'useDarkMode']
-          },
-        ],
-        dts: true,
-      }),
-      UnoCSS()
-    ]
+  webpack: (config) => {
+    config.plugins.push(UnoCSS())
+    config.plugins.push(AutoImport({
+      imports: ['react']
+    }))
     return config
   },
 }
